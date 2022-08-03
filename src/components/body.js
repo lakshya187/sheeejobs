@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import Divider from "@material-ui/core/Divider";
 import HeroImage from "./../assets/Hero-image.jpg";
 
-import { useState } from "react";
 import { useRef } from "react";
-import { useEffect } from "react";
 
 import backgroundImg from "./../assets/background-img.svg";
 import icon1 from "../assets/icon-1.svg";
@@ -16,7 +14,7 @@ import imageSolution from "../assets/image-solution.svg";
 
 // import Carousel from "react-multi-carousel";
 import RenuShah from "./../assets/team/Renu-shah.jpg";
-import SheetalPratik from "./../assets/team/Sheetal Pratik.jpg";
+// import SheetalPratik from "./../assets/team/Sheetal Pratik.jpg";
 import SushmitaKaneri from "./../assets/team/Sushmita Kaneri.jpg";
 import TaraGopal from "./../assets/team/Tara Gopal.jpg";
 import NehaVatsala from "./../assets/team/Neha Vatsala.jpg";
@@ -54,40 +52,43 @@ const Body = () => {
               Background
             </p>
             <p onClick={() => ourSolution.current.scrollIntoView()}>
-              What we do?
+              What we do
             </p>
-            <p onClick={() => aboutUs.current.scrollIntoView()}>About Us</p>
+            <p onClick={() => aboutUs.current.scrollIntoView()}>About us</p>
             <p onClick={() => team.current.scrollIntoView()}>Team</p>
             <p onClick={() => contactUs.current.scrollIntoView()}>Contact us</p>
           </div>
         </div>
         <div className="headerRight">
-          <a href="https://refactored.ai/partner/Sheee/partner/register/">
-            <button className="btn">Register now! </button>
+          <a href="https://forms.gle/HbMrASD6bpjoymKV8">
+            <button className="btn mobileHeader">Register/Login now</button>
           </a>
         </div>
       </div>
       <div className="bodyHeroContainer" ref={home}>
         <div className="bodyHeroText">
           <p className="bodyHeroTextEnglish textLineHeightBody">
-            SHEEE is a women only platform that connects women in the blue
-            collar and entry level white collar segment to job opportunities
+            SHEEE is India's first women-only platform that connects women in
+            the grey collar segment to job opportunities
           </p>
 
           <p className="bodyHeroTextHindi textLineHeightBody">
-            SHEEE एकमात्र ऐसा मंच है जो महिलाओं को ग्रे कॉलर सेगमेंट में नौकरी
-            के अवसरों से जोड़ता है।
+            SHEEE भारत का पहला एकमात्र ऐसा मंच है जो महिलाओं को ग्रे कॉलर
+            सेगमेंट में नौकरी के अवसरों से जोड़ता है।
           </p>
           <hr style={{ marginTop: "20px" }} />
-          <p
-            classNamne="registerNow marginTopMed"
-            style={{ marginTop: "20px" }}
+          <a
+            href="https://forms.gle/HbMrASD6bpjoymKV8"
+            className="registerNow marginTopMed hindiregister secondaryBtn"
+            style={{ marginTop: "20px", color: "#ffffff" }}
           >
             {" "}
-            Register रजिस्टर करें
-          </p>
-          <a href="https://refactored.ai/partner/Sheee/partner/register/">
-            <button className="btn marginTopMed">Register now </button>
+            रजिस्टर/लॉग इन करें
+          </a>
+          <a href="https://forms.gle/HbMrASD6bpjoymKV8">
+            <button className="btn registerNowEnglish marginTopMed">
+              Register/Login now{" "}
+            </button>
           </a>
         </div>
         <div className="bodyHeroImgContainer">
@@ -107,12 +108,14 @@ const Body = () => {
               <img src={icon1} />
               <div className=" backgroundTextItemText">
                 <p>
-                  8M women are dropping out from the education system and are
-                  being added to this pool of unemployed women every year.
+                  Female Labour Force Participation (FLFP) rate is less than
+                  20%, lower than even countries like Bangladesh, Nepal and Sri
+                  Lanka
                 </p>
                 <p className="backgroundTextItemText marginTopMed">
-                  प्रति वर्ष 80 लाख शिक्षित लड़कियाँ स्कूल व कॉलेज से ड्राप आउट
-                  हो कर बेरोजगार महिलाओं की सँख्या में जुड़ रहीं हैं।
+                  भारत में महिला श्रम बल भागीदारी (FLFP) दर 20% से भी कम है और
+                  इस सन्दर्भ में भारत का स्थान बांग्लादेश, नेपाल और श्रीलंका
+                  जैसे देशों से भी नीचे आता है।
                 </p>
               </div>
             </div>
@@ -121,12 +124,16 @@ const Body = () => {
               <img src={icon2} />
               <div className=" backgroundTextItemText">
                 <p>
-                  8M women are dropping out from the education system and are
-                  being added to this pool of unemployed women every year.
+                  Only 5 out of the top 15 sectors in skilling are focussing on
+                  women covering traditional areas like apparel, beauty,
+                  healthcare etc. There is no focus on Future of Work skills.
                 </p>
                 <p className="backgroundTextItemText marginTopMed">
-                  प्रति वर्ष 80 लाख शिक्षित लड़कियाँ स्कूल व कॉलेज से ड्राप आउट
-                  हो कर बेरोजगार महिलाओं की सँख्या में जुड़ रहीं हैं।
+                  कौशल विकास में शीर्ष 15 क्षेत्रों में से केवल 5 क्षेत्र
+                  महिलाओं पर केंद्रित हैं और वो भी परिधान, सौंदर्य, स्वास्थ्य
+                  सेवा आदि जैसे पारंपरिक क्षेत्रों तक सिमित हैं। भविष्य में
+                  उपयोग होने वाले आधुनिक कार्य कौशल विकास पर विशेष ध्यान नहीं
+                  है।
                 </p>
               </div>
             </div>
@@ -153,7 +160,7 @@ const Body = () => {
             <img src={whyNowImage} />
           </div>
           <div className="bodyWhyNowContainerRight">
-            <h2> Why now? शीघ्रता की आवश्यकता</h2>
+            <h2> Why now शीघ्रता की आवश्यकता</h2>
             <ul>
               <li>
                 Increasing women participation will push India’s GDP by 27%{" "}
@@ -199,14 +206,14 @@ const Body = () => {
             </div>
             <div className="bodySolutionTextContainer">
               <div className="bodySolutionText">
-                SHEEE is a women only platform that connects women in the blue
-                collar and entry level white collar segment to job
-                opportunities. We provide a roadmap through a curated DISCOVERY,
-                NURTURING and PLACEMENT program. <br />
-                SHEEE एकमात्र ऐसा मंच है जो महिलाओं को ग्रे कॉलर सेगमेंट में
-                नौकरी के अवसरों से जोड़ता है। हम महिला आकांक्षियों को एक विशेष
-                रूप से क्यूरेट किया गया - खोज-विकास-नौकरी का प्लेटफार्म प्रदान
-                करते हैं।
+                SHEEE is India's first women-only platform that connects women
+                in the grey collar segment to job opportunities. We provide a
+                roadmap through a curated DISCOVERY, NURTURING and PLACEMENT
+                program. <br />
+                SHEEE भारत का पहला एकमात्र ऐसा मंच है जो महिलाओं को ग्रे कॉलर
+                सेगमेंट में नौकरी के अवसरों से जोड़ता है। हम महिला आकांक्षियों
+                को एक विशेष रूप से क्यूरेट किया गया - खोज-विकास-नौकरी का
+                प्लेटफार्म प्रदान करते हैं।
               </div>
             </div>
           </div>
@@ -219,7 +226,7 @@ const Body = () => {
         <div className="bodyAboutUsContainer">
           <div className="bodyAboutUsHeading">
             {" "}
-            <div>About Us</div>
+            <div>About us</div>
           </div>
           <div className="bodyAboutUsTextContainer">
             <div className="bodyAboutUsLeft">
@@ -242,8 +249,8 @@ const Body = () => {
           </div>
 
           <div className="bodyAboutUsFooter">
-            <a href="https://refactored.ai/partner/Sheee/partner/register/">
-              <button className="btn marginTopMed">Register now!</button>
+            <a href="https://forms.gle/HbMrASD6bpjoymKV8">
+              <button className="btn marginTopMed">Register/Login now</button>
             </a>
           </div>
         </div>
@@ -252,52 +259,49 @@ const Body = () => {
         <div className="bodyHeading">
           <h2>Team टीम</h2>
         </div>
+        <div className="bodyTeamCoFounders">
+          <div className="bodyCarouselItem">
+            <a href="https://www.linkedin.com/in/renu-shah-00b2ba7/">
+              <img src={RenuShah} />
+              <div className="bodyCarouselItemText">
+                <div className="bodyCarouselItemName">Renu Shah</div>
+                <div className="bodyCarouselItemPosition"> Co-Founder</div>
+              </div>
+            </a>
+          </div>
+          <div className="bodyCarouselItem">
+            <a href="https://www.linkedin.com/in/tara-gopal-ba241310/">
+              <img src={TaraGopal} />
+              <div className="bodyCarouselItemText">
+                <div className="bodyCarouselItemName">Tara Gopal</div>
+                <div className="bodyCarouselItemPosition"> Co-Founder</div>
+              </div>
+            </a>
+          </div>
+        </div>
         <div className="bodyCarousel">
           <div className="bodyCarouselItem">
-            <img src={RenuShah} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Renu shah</div>
-              <div className="bodyCarouselItemPosition"> Co-Founder</div>
-            </div>
-          </div>
-          <div className="bodyCarouselItem">
-            <img src={TaraGopal} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Tara Gopal</div>
-              <div className="bodyCarouselItemPosition"> Co-Founder</div>
-            </div>
-          </div>
-          <div className="bodyCarouselItem">
-            <img src={SheetalPratik} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Sheetal Pratik </div>
-              <div className="bodyCarouselItemPosition">
-                Consultant (Tech & BD)
+            <a href="https://www.linkedin.com/in/kanerisushmita/">
+              <img src={SushmitaKaneri} className="team" />
+              <div className="bodyCarouselItemText">
+                <div className="bodyCarouselItemName">Sushmita Kaneri</div>
+                <div className="bodyCarouselItemPosition">
+                  {" "}
+                  Consultant (Tech)
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="bodyCarouselItem">
-            <img src={SushmitaKaneri} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Sushmita Kaneri</div>
-              <div className="bodyCarouselItemPosition"> Consultant (Tech)</div>
-            </div>
-          </div>
-          <div className="bodyCarouselItem">
-            <img src={NehaVatsala} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Neha Vatsala </div>
-              <div className="bodyCarouselItemPosition">
-                Consultant - <br /> Media & Digital Outreach{" "}
+            <a href="https://www.linkedin.com/in/neha-vatsala/">
+              <img src={NehaVatsala} className="team" />
+              <div className="bodyCarouselItemText">
+                <div className="bodyCarouselItemName">Neha Vatsala </div>
+                <div className="bodyCarouselItemPosition">
+                  Consultant - <br /> Media & Digital Outreach{" "}
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="bodyCarouselItem">
-            <img src={AbhiYadav} />
-            <div className="bodyCarouselItemText">
-              <div className="bodyCarouselItemName">Abhi Yadav</div>
-              <div className="bodyCarouselItemPosition">Advisor</div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -306,9 +310,9 @@ const Body = () => {
           <div className="footerLeft">
             <img src={logo} />
             <p>
-              SHEEE is a women only platform that
-              <br /> connects women in the blue <br />
-              collar and entry level white collar segment to job opportunities
+              SHEEE is India's first women-only platform that
+              <br /> connects women in the grey <br />
+              collar segment to job opportunities
             </p>
           </div>
           <div className="footerRight">
