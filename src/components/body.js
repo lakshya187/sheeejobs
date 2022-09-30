@@ -281,18 +281,6 @@ const Body = () => {
         </div>
         <div className="bodyCarousel">
           <div className="bodyCarouselItem">
-            <a href="https://www.linkedin.com/in/kanerisushmita/">
-              <img src={SushmitaKaneri} className="team" />
-              <div className="bodyCarouselItemText">
-                <div className="bodyCarouselItemName">Sushmita Kaneri</div>
-                <div className="bodyCarouselItemPosition">
-                  {" "}
-                  Consultant (Tech)
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="bodyCarouselItem">
             <a href="https://www.linkedin.com/in/neha-vatsala/">
               <img src={NehaVatsala} className="team" />
               <div className="bodyCarouselItemText">
